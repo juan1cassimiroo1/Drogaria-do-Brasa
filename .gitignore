@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+database.json
+test_db.json
+.pytest_cache/
+.ruff_cache/
