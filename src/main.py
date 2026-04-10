@@ -4,7 +4,7 @@ from rich.table import Table
 from .models import Medicamento
 from .service import MedicamentoService
 
-app = typer.Typer(help="Med-Track CLI - Sistema de Gestão de Medicamentos")
+app = typer.Typer(help="Drogaria do Brasa - Sistema de Gestão de Medicamentos")
 console = Console()
 service = MedicamentoService()
 
