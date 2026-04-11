@@ -29,4 +29,4 @@ Diferente de uma lista comum, o sistema impede erros humanos (como estoques nega
 3. Consulte seu estoque: `python -m src.main list`
 
 ---
-**Desenvolvido por:** Juan Cassimiro 🇧🇷
+**Desenvolvido por:** Juan Cassimiro
