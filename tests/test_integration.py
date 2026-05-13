@@ -1,4 +1,4 @@
-import pytest
+
 from src.service import MedicamentoService
 
 def test_viacep_integration_real():
