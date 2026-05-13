@@ -3,3 +3,4 @@ httpx
 typer
 pydantic
 pytest
+ruff
