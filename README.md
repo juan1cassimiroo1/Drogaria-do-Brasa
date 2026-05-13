@@ -29,7 +29,7 @@ Diferente de uma lista comum, o sistema impede erros humanos (como estoques nega
 3. Consulte seu estoque: `python -m src.main list`
 
 ## 🌍 Entrega Intermediária - Links Rápidos
-* **Aplicação Online:** [🔗 Acesse aqui o Painel Web]([https://drogaria-do-brasa-7jrapicmsnawq8nabtx47k.streamlit.app])
+* **Aplicação Online:** [AQUI](https://drogaria-do-brasa-7jrapicmsnawq8nabtx47k.streamlit.app)
 
 ---
 **Desenvolvido por:** Juan Cassimiro
