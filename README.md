@@ -1,4 +1,4 @@
-# Med-Track CLI (v1.0.0)
+# Drogaria do Brasa (v1.0.0)
 
 ## 🩺 O Problema
 Pacientes crônicos frequentemente esquecem doses ou perdem o controle do estoque de seus medicamentos, comprometendo a eficácia do tratamento.

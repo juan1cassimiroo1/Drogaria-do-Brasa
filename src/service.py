@@ -1,4 +1,5 @@
 import json
+import httpx
 import os
 from typing import List
 from .models import Medicamento
@@ -36,3 +37,15 @@ class MedicamentoService:
             self._salvar_dados()
             return True
         return False
+
+# ... entrega intermediaria ...
+    def buscar_cep(self, cep: str):
+        """Consulta a API externa ViaCEP"""
+        with httpx.Client() as client:
+            response = client.get(f"https://viacep.com.br/ws/{cep}/json/")
+            if response.status_code == 200:
+                dados = response.json()
+                if "erro" in dados:
+                    return None
+                return f"{dados['logradouro']}, {dados['bairro']} - {dados['localidade']}/{dados['uf']}"
+            return None

@@ -4,7 +4,7 @@ from rich.table import Table
 from .models import Medicamento
 from .service import MedicamentoService
 
-app = typer.Typer(help="Med-Track CLI - Sistema de Gestão de Medicamentos")
+app = typer.Typer(help="Drogaria do Brasa - Sistema de Gestão de Medicamentos")
 console = Console()
 service = MedicamentoService()
 
@@ -47,3 +47,14 @@ def remove(nome: str):
 
 if __name__ == "__main__":
     app()
+
+@app.command()
+def onde_comprar(cep: str):
+    """Busca o endereço de uma farmácia pelo CEP"""
+    with console.status("[bold green]Consultando API externa..."):
+        endereco = service.buscar_cep(cep)
+    
+    if endereco:
+        console.print(f"[bold blue]📍 Endereço encontrado:[/bold blue] {endereco}")
+    else:
+        console.print("[bold red]❌ CEP não encontrado ou erro na API.[/bold red]")    
