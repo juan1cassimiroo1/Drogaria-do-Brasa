@@ -1,6 +1,5 @@
 streamlit
 httpx
 typer
-rich
 pydantic
 pytest
