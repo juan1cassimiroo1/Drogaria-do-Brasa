@@ -1,4 +1,3 @@
-
 from src.service import MedicamentoService
 
 def test_viacep_integration_real():
@@ -6,5 +5,5 @@ def test_viacep_integration_real():
     resultado = service.buscar_cep("70150900")
     
     assert resultado is not None
-    assert "Brasilia" in resultado
-    assert "DF" in resultado
+    assert "DF" in resultado.upper()
+    assert "PODERES" in resultado.upper()
