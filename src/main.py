@@ -47,3 +47,14 @@ def remove(nome: str):
 
 if __name__ == "__main__":
     app()
+
+@app.command()
+def onde_comprar(cep: str):
+    """Busca o endereço de uma farmácia pelo CEP"""
+    with console.status("[bold green]Consultando API externa..."):
+        endereco = service.buscar_cep(cep)
+    
+    if endereco:
+        console.print(f"[bold blue]📍 Endereço encontrado:[/bold blue] {endereco}")
+    else:
+        console.print("[bold red]❌ CEP não encontrado ou erro na API.[/bold red]")    

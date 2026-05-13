@@ -1,4 +1,4 @@
-# Drogaria do Brasa
+# Drogaria do Brasa (v1.0.0)
 
 > Gerenciamento pessoal de estoque de medicamentos.
 
