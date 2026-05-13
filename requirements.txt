@@ -1,7 +1,6 @@
+httpx
+streamlit
 typer
 rich
 pydantic
 pytest
-ruff
-httpx
-streamlit
