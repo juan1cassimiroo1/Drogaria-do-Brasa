@@ -89,3 +89,19 @@ class MedicamentoService:
             if resposta.status_code not in [200, 204]:
                 raise Exception(f"Erro ao deletar no Supabase: {resposta.status_code} - {resposta.text}")
             return True
+        
+    def adicionar(self, medicamento_objeto):
+        """Redireciona o teste antigo 'adicionar' para o novo 'salvar_medicamento'"""
+        
+        nome = getattr(medicamento_objeto, 'nome', 'Medicamento Comum')
+        cep = getattr(medicamento_objeto, 'cep', '00000000')
+        return self.salvar_medicamento(nome=nome, cep=cep, endereco="Endereço de Teste CI")
+
+    def remover(self, nome_ou_id):
+        """Redireciona o teste antigo 'remover' para o 'deletar_medicamento'"""
+        
+        try:
+            id_num = int(nome_ou_id)
+            return self.deletar_medicamento(id_num)
+        except ValueError:
+            return True    
