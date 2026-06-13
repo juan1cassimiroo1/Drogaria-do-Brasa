@@ -32,19 +32,23 @@ O sistema impede erros humanos, garante validação rigorosa de dados e centrali
 
 Siga os passos sequenciais abaixo para configurar e executar o projeto na sua máquina:
 
-```bash
 # 1. Instale as dependências do projeto
 pip install -r requirements.txt
 
 # 2. Crie um arquivo chamado .env na raiz do projeto e configure suas chaves do Supabase:
-SUPABASE_URL="[https://seu-projeto.supabase.co](https://seu-projeto.supabase.co)"
+SUPABASE_URL="seu-projeto-aqui.supabase.co"
 SUPABASE_KEY="sua-chave-anon-public-key"
 
 # 3. Inicie a aplicação web do Streamlit
 streamlit run app.py
 
-🌍 Links Rápidos
-Aplicação Online: AQUI
+---
 
-👤 Desenvolvido por:
-Juan Cassimiro
+## 🌍 Links Rápidos
+
+* **Aplicação Online:** [AQUI](https://drogaria-do-brasa-7jrapicmsnawq8nabtx47k.streamlit.app)
+
+---
+
+## 👤 Desenvolvido por:
+* Juan Cassimiro
