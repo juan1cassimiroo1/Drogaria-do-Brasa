@@ -4,3 +4,5 @@ typer
 pydantic
 pytest
 ruff
+supabase
+python-dotenv
