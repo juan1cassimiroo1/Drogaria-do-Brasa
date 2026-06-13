@@ -30,22 +30,21 @@ O sistema impede erros humanos, garante validação rigorosa de dados e centrali
 
 ## 💻 Como Instalar e Rodar
 
-Siga os passos abaixo para configurar e executar o projeto localmente:
+Siga os passos sequenciais abaixo para configurar e executar o projeto na sua máquina:
 
-### 1. Instale as dependências
-Certifique-se de ter o Python instalado e execute no terminal:
 ```bash
+# 1. Instale as dependências do projeto
 pip install -r requirements.txt
 
-### 2. Configure as Variaveis de Ambiente
+# 2. Crie um arquivo chamado .env na raiz do projeto e configure suas chaves do Supabase:
 SUPABASE_URL="[https://seu-projeto.supabase.co](https://seu-projeto.supabase.co)"
 SUPABASE_KEY="sua-chave-anon-public-key"
 
-### 3. Execute o comando do Streamlit
-Bash : streamlit run app.py
+# 3. Inicie a aplicação web do Streamlit
+streamlit run app.py
 
-## 🌍 Entrega Intermediária - Links Rápidos
-* **Aplicação Online:** [AQUI](https://drogaria-do-brasa-7jrapicmsnawq8nabtx47k.streamlit.app)
+🌍 Links Rápidos
+Aplicação Online: AQUI
 
----
-**Desenvolvido por:** Juan Cassimiro
+👤 Desenvolvido por:
+Juan Cassimiro
